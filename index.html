@@ -1,115 +1,97 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>MM and ZZ</title>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="MM & ZZ 的双人纪念册。始于 2022 年 2 月 1 日，把相伴的时光和喜欢的瞬间，慢慢收藏。">
+  <title>MM & ZZ · 还好是你</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23f8f7f2'/%3E%3Cpath d='M32 48 13 29C2 15 23 6 32 21 41 6 62 15 51 29Z' fill='%23a75b48'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/default.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="icon-next" viewBox="0 0 24 24"><path d="m5 5 10 7-10 7ZM19 5v14"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></symbol>
+  </svg>
 
-		<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-		</style>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header page-width">
+    <a class="brand" href="#home" aria-label="MM 与 ZZ，回到首页">MM <span>&</span> ZZ<span class="brand-dot">.</span></a>
+    <nav class="navigation" aria-label="主导航"><a href="#time">相伴时光</a><a href="#moments">小小相册</a><a href="#letter">写给你</a></nav>
+    <span class="header-note"><span class="status-dot"></span> 两个人的小世界</span>
+  </header>
 
-		<link href="css/default.css" type="text/css" rel="stylesheet">
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/garden.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>
-		<script src="js/script.js" defer></script>
-		
+  <main id="main">
+    <section class="hero page-width" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-line"></span> YOU, ME & EVERY LITTLE THING</p>
+        <h1 id="hero-title">世界很大，<br>还好是<span class="underlined">你<svg viewBox="0 0 110 14" aria-hidden="true"><path d="M3 9Q50 0 106 6M14 13Q57 5 96 10"/></svg></span>。</h1>
+        <p class="hero-description">一屋，两人，三餐，四季。<br>把平凡的日子，慢慢过成我们的故事。</p>
+        <a class="primary-link" href="#moments">收藏我们的瞬间 <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        <div class="hero-footnote"><svg class="icon heart-icon" aria-hidden="true"><use href="#icon-heart"/></svg><span>始于 <time datetime="2022-02-01">2022.02.01</time><span class="footnote-divider">/</span>故事还在继续</span></div>
+      </div>
+      <div class="hero-portraits" aria-label="MM 和 ZZ 的桂林插画">
+        <div class="portrait-orbit" aria-hidden="true"></div><span class="portrait-spark spark-one" aria-hidden="true">✳</span>
+        <figure class="polaroid portrait-him"><div class="tape" aria-hidden="true"></div><img src="photos/optimized/Guiling_zzh.webp" alt="戴着棒球帽的张先生，身后是桂林山水" width="960" height="960" fetchpriority="high"><figcaption><span>Mr. Zhang</span><span class="photo-small">是我呀</span></figcaption></figure>
+        <figure class="polaroid portrait-her"><div class="tape" aria-hidden="true"></div><img src="photos/optimized/Guiling_mx.webp" alt="戴着墨镜的 Miss Miao，身后是桂林山水" width="960" height="960" fetchpriority="high"><figcaption><span>Miss Miao</span><svg class="icon heart-icon" aria-hidden="true"><use href="#icon-heart"/></svg></figcaption></figure>
+        <div class="love-stamp" aria-hidden="true"><span>BETTER</span><svg class="icon"><use href="#icon-heart"/></svg><span>TOGETHER</span></div>
+        <p class="portrait-note">在一起，就是好风景。<svg viewBox="0 0 80 35" aria-hidden="true"><path d="M3 5q31 32 70 5m-15-2 17-2-6 16"/></svg></p><span class="portrait-spark spark-two" aria-hidden="true">✧</span>
+      </div>
+    </section>
 
-	</head>
+    <section class="together-section page-width" id="time" aria-labelledby="time-title">
+      <div class="together-intro"><span class="eyebrow">THE DAYS WITH YOU</span><h2 id="time-title">喜欢你，日复一日。</h2><p>从 <time datetime="2022-02-01T12:00:00+08:00">2022 年 2 月 1 日</time>，到每一个此刻。</p></div>
+      <div class="elapsed-clock" role="timer" aria-label="在一起的时长">
+        <div class="time-unit time-days"><span id="days">—</span><span class="time-label">天 <span>DAYS</span></span></div><span class="time-colon" aria-hidden="true">:</span>
+        <div class="time-unit"><span id="hours">—</span><span class="time-label">时 <span>HOURS</span></span></div><span class="time-colon" aria-hidden="true">:</span>
+        <div class="time-unit"><span id="minutes">—</span><span class="time-label">分 <span>MINS</span></span></div><span class="time-colon" aria-hidden="true">:</span>
+        <div class="time-unit"><span id="seconds">—</span><span class="time-label">秒 <span>SECS</span></span></div>
+      </div>
+      <span class="together-heart" aria-hidden="true"><svg class="icon"><use href="#icon-heart"/></svg></span>
+    </section>
 
-	<body>
-		<!-- <embed src="http://p3qhnc0eg.bkt.clouddn.com/U%20are%20so%20beautiful.mp3" width="0" height="0" loop="-1" autostart="true"> </embed> -->
-		<!--<embed src="files/Zhang_Shengsheng.mp3" width="0" height="0" loop="-1" autostart="true"> </embed> -->
-		<!-- <audio src="files/Zhang_Shengsheng.mp3" controls autoplay> 你的浏览器不支持音频 </audio> -->
+    <section class="moments-section page-width" id="moments" aria-labelledby="moments-title">
+      <div class="section-heading"><div><p class="eyebrow">LITTLE MOMENTS, BIG LOVE</p><h2 id="moments-title">和你，定格好时光<span class="accent-dot">。</span></h2></div><p class="section-aside">风景很好看，<br>身边的你也是。</p></div>
+      <div class="album-grid">
+        <button class="album-entry" type="button" data-photo="0" aria-label="查看相册：山水之间的我们">
+          <span class="album-image"><img src="photos/optimized/guangxi_hezhao.webp" alt="我们在桂林山水前的合照" width="1600" height="1200" loading="lazy"><span class="photo-tag">山水之间</span><span class="expand-photo"><svg class="icon" aria-hidden="true"><use href="#icon-expand"/></svg></span></span>
+          <span class="album-caption"><span>眼里是风景，心里是你。</span><span class="album-number">01 /</span></span>
+        </button>
+        <button class="album-entry" type="button" data-photo="1" aria-label="查看相册：湖边的你">
+          <span class="album-image"><img src="photos/optimized/kunming_mx.webp" alt="戴着墨镜、在湖边比剪刀手的 Miss Miao" width="1200" height="1600" loading="lazy"><span class="photo-tag">去吹吹风</span><span class="expand-photo"><svg class="icon" aria-hidden="true"><use href="#icon-expand"/></svg></span></span>
+          <span class="album-caption"><span>和你一起，去看世界。</span><span class="album-number">02 /</span></span>
+        </button>
+        <button class="album-entry" type="button" data-photo="2" aria-label="查看相册：夜色里的我们">
+          <span class="album-image"><img src="photos/optimized/guangxi_hezhao1.webp" alt="我们在亮灯的红桥前的夜晚合照" width="1600" height="1200" loading="lazy"><span class="photo-tag">晚风与我们</span><span class="expand-photo"><svg class="icon" aria-hidden="true"><use href="#icon-expand"/></svg></span></span>
+          <span class="album-caption"><span>晚风温柔，你也温柔。</span><span class="album-number">03 /</span></span>
+        </button>
+        <button class="album-entry" type="button" data-photo="3" aria-label="查看相册：秋日校园里的你">
+          <span class="album-image"><img src="photos/optimized/Nanjing_mx.webp" alt="秋天的校园里，站在 I love SEU 标志前的 Miss Miao" width="1600" height="1200" loading="lazy"><span class="photo-tag">把此刻收藏</span><span class="expand-photo"><svg class="icon" aria-hidden="true"><use href="#icon-expand"/></svg></span></span>
+          <span class="album-caption"><span>平常的一天，珍贵的一页。</span><span class="album-number">04 /</span></span>
+        </button>
+      </div>
+      <p class="album-endnote"><span></span> 未完待续，还有好多风景想和你看 <svg class="icon heart-icon" aria-hidden="true"><use href="#icon-heart"/></svg><span></span></p>
+    </section>
 
+    <section class="letter-section" id="letter" aria-labelledby="letter-title">
+      <div class="letter-layout page-width">
+        <div class="letter-intro"><p class="eyebrow">A LITTLE NOTE FOR YOU</p><h2 id="letter-title">有些话，<br>想一直说给你听。</h2><p>日子很长，<br>我的喜欢也是。</p><svg class="letter-flower" viewBox="0 0 140 170" fill="none" aria-hidden="true"><path d="M70 153c8-36 12-61 4-92M76 120c-21-27-38-15-29-1 5 8 17 9 29 8m3-22c11-24 34-25 29-8-4 12-18 17-30 16"/><path d="M73 62C38 86 23 61 48 47 13 33 36 8 57 26 53-8 86-5 84 24c25-23 44 2 19 20 34 7 20 38-8 26-1 31-32 26-22-8Z"/><circle cx="75" cy="45" r="10"/></svg></div>
+        <article class="letter-paper"><span class="letter-corner" aria-hidden="true">♡</span><p class="letter-salutation">Dear Miss Miao,</p><div class="letter-body"><p>我很努力地，要成为一个优秀的男朋友。<br>你也很努力地，在成为一个优秀的女朋友的路上。</p><p>这种感觉，真的是太好了。</p><p>唯有梦想与好姑娘，<span class="letter-emphasis">不可辜负。</span></p></div><p class="letter-love">I want to say: <span>I love you!</span></p><div class="letter-signature"><span>一直喜欢你的</span><span>张先生 <svg class="icon heart-icon" aria-hidden="true"><use href="#icon-heart"/></svg></span></div></article>
+      </div>
+    </section>
+  </main>
 
-		<div id="mainDiv">
-			<div id="content">
-				<div id="code">
-					我很努力的<br />
-					要成为一个</span><br />
-					<span class="keyword">优秀的男朋友</span><br /><br />
+  <footer class="site-footer page-width"><a class="brand footer-brand" href="#home">MM <span>&</span> ZZ<span class="brand-dot">.</span></a><p>Made for Miss Miao, with love by <a href="https://zizizi-hao.github.io/" target="_blank" rel="noopener noreferrer">Darcy <span aria-hidden="true">↗</span></a></p><span class="footer-ending">你与我，来日方长。</span></footer>
 
-					你也很努力的<br />
-					在成为一个<br />
-					<span class="keyword">优秀的女朋友的路上</span><br /><br />
+  <aside class="music-player" aria-label="背景音乐播放器"><span class="record" aria-hidden="true"><span></span></span><div class="track-info"><span class="track-title" id="trackTitle">声声</span><span class="track-status" id="trackStatus" role="status">给此刻配一首歌</span></div><button class="music-toggle" id="musicBtn" type="button" aria-label="播放音乐" aria-pressed="false"><svg class="icon play-icon" aria-hidden="true"><use href="#icon-play"/></svg><svg class="icon pause-icon" aria-hidden="true"><use href="#icon-pause"/></svg></button><button class="next-track" id="nextTrack" type="button" aria-label="下一首"><svg class="icon" aria-hidden="true"><use href="#icon-next"/></svg></button><audio id="bgMusic" src="files/Zhang_Shengsheng.mp3" preload="none" loop></audio></aside>
 
-					这种感觉<br />
-					真的是<br />
-					<span class="keyword">太好了</span><br /><br />
-
-					唯有梦想与好姑娘<br />
-					<span class="keyword">不可辜负</span><br /><br />
-
-					<hr />
-					<span class="keyword">I want to say:</span><br />
-					Miss Miao<br />
-					<span class="keyword"> I love you! </span><br />
-					-- 张先生<br />
-
-
-				</div>
-				<div id="loveHeart">
-					<canvas id="garden"></canvas>
-					<div id="words">
-						<div id="messages">
-							相恋日期2022年2月1日，距今已过去：
-							<div id="elapseClock"></div>
-						</div>
-		<!--			<div id="loveu">
-							<br/>
-							<div class="signature">- 钟先森</div>
-						</div>
-		-->
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<button id="musicBtn">🎵 播放音乐</button> 
-		<audio id="bgMusic" src="files/Zhang_Shengsheng.mp3" loop></audio>
-
-		<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-
-		together.setFullYear(2022, 2, 1);  // 日期从2开始计算
-		together.setHours(12);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-			document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
-
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
-
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-		</script>
-		<div style="text-align:center;clear:both">
-		<p>Made for Miss Miao, made by <a href="https://zizizi-hao.github.io/" target="_blank">Darcy<a /></p>
-		<p>Copyright © 2025 - now. All Rights Reserved. Designed by <a href="https://zizizi-hao.github.io/" target="_blank">Darcy<a /> </p>
-		</div>
-
-	</body>
+  <dialog class="photo-dialog" id="photoDialog" aria-label="我们的相册"><button class="dialog-close" type="button" aria-label="关闭相册"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button><button class="dialog-prev" type="button" aria-label="上一张"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button><figure class="dialog-figure"><img id="dialogImage" alt="" width="960" height="960"><figcaption id="dialogCaption" aria-live="polite"></figcaption></figure><button class="dialog-next" type="button" aria-label="下一张"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></dialog>
+</body>
 </html>
